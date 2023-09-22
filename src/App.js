@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import Toggle from "./component/state/Toggle";
+// import Game from "./component/tictactoe/Game";
+import GameReduder from "./component/tictactoeusereducer/GameReducer";
+// import YoutubeList from "./component/youtube/YoutubeList";
 
+// Parent  component
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div>
+      {/* session 1 */}
+      {/* <h1>Youtube List</h1>
+      <YoutubeList>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          I’m a designer and hobby photographer.Feel free to donate if you find
+          my images useful!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </YoutubeList> */}
+
+      {/* Session 2 */}
+      {/* <Toggle></Toggle> */}
+
+      {/* Session 3 */}
+      {/* <Game></Game> */}
+
+      {/* Session 4 */}
+      <GameReduder></GameReduder>
     </div>
   );
 }
