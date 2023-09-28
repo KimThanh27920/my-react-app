@@ -1,6 +1,7 @@
 import React from "react";
 import { YouTubeItem } from "./YoutubeItem";
 import { YoutubeData } from "./data";
+import "./YoutubeStyles.css";
 
 const YoutubeList = (props) => {
   return (

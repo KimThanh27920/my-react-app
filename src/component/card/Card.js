@@ -3,11 +3,12 @@ import styled from "styled-components";
 
 const StyledCard = styled.div`
   position: relative;
-  width: 400px;
+  width: 500px;
+  margin: auto;
 `;
 
 const CardImage = styled.div`
-  height: 400px;
+  height: 500px;
   width: 100%;
   border-radius: 8px;
 `;
@@ -30,13 +31,13 @@ const CardContent = styled.div`
   z-index: 10;
   border-radius: 20px;
   padding: 20px;
+  margin: 0px;
 `;
 
 const CardTop = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
 `;
 
 const CardUser = styled.div`
@@ -63,9 +64,10 @@ const CardFooter = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 `;
 
-const CardTitle = styled.h3`
+const CardTitle = styled.span`
   font-size: 18px;
   font-weight: 500;
   color: black;

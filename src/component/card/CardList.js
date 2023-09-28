@@ -1,19 +1,20 @@
 import React from "react";
-import Card from "./Card";
-import styled from "styled-components";
+// import Card from "./Card";
+// import styled from "styled-components";
+import CardTaiwind from "./CardTaiwind";
 
-const StyledCardList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 90px 30px;
-`;
+// const StyledCardList = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: 120px 30px;
+// `;
 class CardType {
-  constructor(image, avatar, username, title, amount) {
+  constructor(image, avatar, username, title, elementType) {
     this.image = image;
     this.avatar = avatar;
     this.username = username;
     this.title = title;
-    this.amount = amount;
+    this.elementType = elementType;
   }
 }
 
@@ -105,19 +106,33 @@ const CardData = [
 ];
 
 const CardList = (props) => {
+  // return (
+  //   <StyledCardList>
+  //     {CardData.map((cardItem, index) => (
+  //       <Card
+  //         key={index}
+  //         image={cardItem.image}
+  //         avatar={cardItem.avatar}
+  //         username={cardItem.username}
+  //         title={cardItem.title}
+  //         amount={cardItem.amount}
+  //       ></Card>
+  //     ))}
+  //   </StyledCardList>
+  // );
   return (
-    <StyledCardList>
+    <div className="grid grid-cols-3 gap-x-3 gap-y-28">
       {CardData.map((cardItem, index) => (
-        <Card
+        <CardTaiwind
           key={index}
           image={cardItem.image}
           avatar={cardItem.avatar}
           username={cardItem.username}
           title={cardItem.title}
-          amount={cardItem.amount}
-        ></Card>
+          elementType={cardItem.elementType}
+        ></CardTaiwind>
       ))}
-    </StyledCardList>
+    </div>
   );
 };
 
